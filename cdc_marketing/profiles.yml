@@ -17,7 +17,7 @@ cdc_marketing:
   outputs:
     dev: &dev_service_account
       <<: *base
-      host: 
+      host: dbc-6a64f55a-c169.cloud.databricks.com
       token: "{{ env_var('DATABRICKS_PAT_TOKEN') }}"
       catalog: "{{ env_var('DEV_CATALOG') }}"
       schema: "{{ env_var('DEV_SCHEMA') }}"
@@ -27,7 +27,7 @@ cdc_marketing:
       <<: *base_auth
       catalog:
       schema: "{{ env_var('DEV_SCHEMA') }}"
-      host: 
+      host: dbc-6a64f55a-c169.cloud.databricks.com
       http_path:
 
     staging: &staging_service_account
@@ -40,7 +40,7 @@ cdc_marketing:
       <<: *base_auth
       catalog:
       schema:
-      host: 
+      host: dbc-6a64f55a-c169.cloud.databricks.com
       http_path:
 
 
