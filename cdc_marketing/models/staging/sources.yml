@@ -1,0 +1,20 @@
+# sources:
+#   - name: [<source-name>]
+#     database: <database-name>
+#     schema: <schema-name>
+#     config:
+#       enabled: true | false
+#       event_time: my_time_field
+#       meta: {<dictionary>}
+#       freshness:
+#         warn_after:
+#           count: <positive_integer>
+#           period: minute | hour | day
+
+#     tables:
+#       - name: [<source-table-name>]
+#         config:
+#           enabled: true | false
+#           event_time: my_time_field
+#           meta: {<dictionary>}
+#           #event_time: my_time_field
